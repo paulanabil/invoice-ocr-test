@@ -1,0 +1,7 @@
+{
+  "app_name": "invoice_kraken_ocr",
+  "js": [
+    "public/js/invoice_kraken_ocr.bundle.js"
+  ],
+  "css": []
+}

@@ -1,0 +1,19 @@
+{
+  "doctype": "DocType",
+  "name": "OCR Training Sample",
+  "module": "Invoice Kraken OCR",
+  "custom": 0,
+  "istable": 0,
+  "fields": [
+    {
+      "fieldname": "image",
+      "label": "Image Snippet",
+      "fieldtype": "Attach"
+    },
+    {
+      "fieldname": "label",
+      "label": "Correct Label",
+      "fieldtype": "Data"
+    }
+  ]
+}

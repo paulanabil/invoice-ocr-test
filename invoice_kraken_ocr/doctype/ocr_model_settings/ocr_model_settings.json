@@ -1,0 +1,39 @@
+{
+  "doctype": "DocType",
+  "name": "OCR Model Settings",
+  "module": "Invoice Kraken OCR",
+  "custom": 0,
+  "istable": 0,
+  "fields": [
+    {
+      "fieldname": "enabled_daily_train",
+      "label": "Enable Daily Retrain",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "base_model_path",
+      "label": "Base Arabic Model Path",
+      "fieldtype": "Data",
+      "default": "private/files/kraken_models/base.mlmodel"
+    },
+    {
+      "fieldname": "current_model_path",
+      "label": "Current Model Path",
+      "fieldtype": "Data",
+      "default": "private/files/kraken_models/current.mlmodel"
+    },
+    {
+      "fieldname": "output_dir",
+      "label": "Models Output Dir",
+      "fieldtype": "Data",
+      "default": "private/files/kraken_models/"
+    },
+    {
+      "fieldname": "min_samples_to_train",
+      "label": "Min Samples to Train",
+      "fieldtype": "Int",
+      "default": 50
+    }
+  ]
+}

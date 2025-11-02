@@ -1,0 +1,60 @@
+{
+  "doctype": "DocType",
+  "name": "OCR Invoice Import",
+  "module": "Invoice Kraken OCR",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "track_changes": 1,
+  "autoname": "OKI-.#####",
+  "fields": [
+    {
+      "fieldname": "title",
+      "label": "Title",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "image",
+      "label": "Invoice Image",
+      "fieldtype": "Attach"
+    },
+    {
+      "fieldname": "raw_text",
+      "label": "Raw OCR Text",
+      "fieldtype": "Long Text",
+      "read_only": 1
+    },
+    {
+      "fieldname": "items",
+      "label": "Items",
+      "fieldtype": "Table",
+      "options": "OCR Invoice Item"
+    },
+    {
+      "fieldname": "party_type",
+      "label": "Party Type",
+      "fieldtype": "Select",
+      "options": "Supplier\\nCustomer",
+      "default": "Supplier"
+    },
+    {
+      "fieldname": "party",
+      "label": "Party",
+      "fieldtype": "Dynamic Link",
+      "options": "party_type"
+    },
+    {
+      "fieldname": "posting_date",
+      "label": "Posting Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Draft\\nExtracted\\nSubmitted",
+      "default": "Draft",
+      "read_only": 1
+    }
+  ]
+}

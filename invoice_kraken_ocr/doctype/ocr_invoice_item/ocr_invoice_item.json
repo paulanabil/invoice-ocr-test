@@ -1,0 +1,48 @@
+{
+  "doctype": "DocType",
+  "name": "OCR Invoice Item",
+  "module": "Invoice Kraken OCR",
+  "custom": 0,
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "line_image",
+      "label": "Line Image",
+      "fieldtype": "Attach"
+    },
+    {
+      "fieldname": "line_text",
+      "label": "Line Text (Predicted)",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "corrected_text",
+      "label": "Corrected Text",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "qty",
+      "label": "Qty",
+      "fieldtype": "Float",
+      "default": 1
+    },
+    {
+      "fieldname": "rate",
+      "label": "Rate",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "amount",
+      "label": "Amount",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "item_code",
+      "label": "Item",
+      "fieldtype": "Link",
+      "options": "Item"
+    }
+  ]
+}
