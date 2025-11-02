@@ -7,7 +7,7 @@ app_email = "you@example.com"
 app_license = "MIT"
 
 # Include minimal asset built from build.json (keeps esbuild stable)
-app_include_js = ["invoice_kraken_ocr.bundle.js"]
+
 
 scheduler_events = {
     "daily": [
